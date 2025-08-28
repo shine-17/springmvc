@@ -27,7 +27,7 @@ public class ResponseBodyController {
         return new ResponseEntity<>("ok", HttpStatus.OK);
     }
 
-//    @ResponseBody
+    @ResponseBody
     @GetMapping("/response-body-string-v3")
     public String responseBodyV3() throws IOException {
         return "ok";
@@ -43,7 +43,7 @@ public class ResponseBodyController {
     }
 
     @ResponseStatus(HttpStatus.OK)
-//    @ResponseBody
+    @ResponseBody
     @GetMapping("/response-body-json-v2")
     public HelloData responseBodyJsonV2() {
         HelloData helloData = new HelloData();
